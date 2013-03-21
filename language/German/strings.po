@@ -464,6 +464,16 @@ msgctxt "#31412"
 msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section.  To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"Ok\" to close this dialog. It will not appear again."
 msgstr "Dieses Symbol zeigt an, dass ein Menü an der Seite des Fensters versteckt ist, welches weitere Optionen beinhaltet. Um es aufzurufen, navigieren Sie nach links oder zeigen Sie mit der Maus darauf.[CR][CR]Klicken Sie auf \"Ok\" um diesen Dialog zu schließen. Er wird nicht wieder angezeigt werden."
 
+msgctxt "#31413"
+msgid "[B]CONFIGURE XBIAN[/B][CR][CR]If you have any questions,[CR]feel free to ask them on www.xbian.org"
+msgstr "[B]KONFIGURIERE XBIAN[/B][CR][CR]Bei Fragen zur Konfiguration [CR]besuche www.xbian.org"
+
+msgctxt "#31414"
+msgid "XBian"
+msgstr "XBian"
+
+#empty strings from id 31415 to 31420
+
 msgctxt "#31421"
 msgid "Select your XBMC user Profile[CR]to login and continue"
 msgstr "Wähle Dein XBMC Benutzer Profil[CR]Zum Anmelden und Fortfahren"
