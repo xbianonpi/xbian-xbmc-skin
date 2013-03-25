@@ -449,6 +449,19 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="207">
+						<description>Hide favourites button in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31930</label>
+						<onclick>Skin.ToggleSetting(HideFavourites)</onclick>
+						<selected>Skin.HasSetting(HideFavourites)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>                                        
 					<control type="label" id="220">
 						<width>750</width>
 						<height>45</height>

@@ -628,3 +628,7 @@ msgstr ""
 msgctxt "#31910"
 msgid "Map & Alerts"
 msgstr ""
+
+msgctxt "#31930"
+msgid "Hide Favourites button in Home"
+msgstr ""

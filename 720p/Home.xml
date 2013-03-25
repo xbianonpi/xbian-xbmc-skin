@@ -1071,6 +1071,7 @@
 				<onright>21</onright>
 				<onup>9002</onup>
 				<ondown>9003</ondown>
+                                <animation effect="slide" end="-55,0" time="0" condition="Skin.HasSetting(HideFavourites)">Conditional</animation>
 			</control>
 			<control type="image">
 				<description>Power Icon</description>
@@ -1080,6 +1081,7 @@
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_power.png</texture>
+                                <animation effect="slide" end="-55,0" time="0" condition="Skin.HasSetting(HideFavourites)">Conditional</animation>
 			</control>
 			<control type="button" id="21">
 				<description>Favourites push button</description>
@@ -1097,6 +1099,7 @@
 				<onright>20</onright>
 				<onup>9002</onup>
 				<ondown>9003</ondown>
+                                <visible>!Skin.HasSetting(HideFavourites)</visible>
 			</control>
 			<control type="image">
 				<description>Favourites Icon</description>
@@ -1106,6 +1109,7 @@
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_favourites.png</texture>
+                                <visible>!Skin.HasSetting(HideFavourites)</visible>
 			</control>
 		</control>
 		<control type="group">

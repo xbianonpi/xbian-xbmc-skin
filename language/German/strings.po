@@ -549,3 +549,7 @@ msgstr "Lade Wetterbericht..."
 msgctxt "#31910"
 msgid "Map & Alerts"
 msgstr "Karte & Alarme"
+
+msgctxt "#31930"
+msgid "Hide Favourites button in Home"
+msgstr "Verstecke Favoriten im Hauptmenü"
