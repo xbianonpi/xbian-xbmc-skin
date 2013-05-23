@@ -1218,7 +1218,7 @@
 		</control>
 		<control type="group">
 			<posx>20</posx>
-			<posy>12</posy>
+			<posy>0</posy>
 			<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
