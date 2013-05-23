@@ -284,6 +284,18 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
+					<control type="radiobutton" id="337">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Use QWERTY keyboard</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ABCKeyBoard)</onclick>
+						<selected>!Skin.HasSetting(ABCKeyBoard)</selected>
+					</control>
 					<control type="label" id="104">
 						<width>750</width>
 						<height>45</height>
