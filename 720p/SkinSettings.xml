@@ -421,19 +421,32 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="204">
-						<description>enable weather info</description>
+					<control type="radiobutton" id="2013">
+						<description>disable auto slideout of submenus</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>20084</label>
-						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
-						<selected>Skin.HasSetting(homepageWeatherinfo)</selected>
+						<label>Show weather as background</label>
+						<onclick>Skin.ToggleSetting(Weatherbackgroundhome)</onclick>
+						<selected>Skin.HasSetting(Weatherbackgroundhome)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<visible>!IsEmpty(Weather.Plugin)</visible>
+						<enable>!IsEmpty(Skin.String(WeatherFanartDir))</enable>
+					</control>					
+					<control type="radiobutton" id="2070">
+						<description>Enable system information</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Show system information</label>
+						<onclick>Skin.ToggleSetting(homepageSysteminfo)</onclick>
+						<selected>Skin.HasSetting(homepageSysteminfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="205">
 						<description>Show Recently added Video info</description>
