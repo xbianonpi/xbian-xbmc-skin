@@ -486,6 +486,19 @@
 						<selected>Skin.HasSetting(HideFavourites)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control> 		
+					<control type="radiobutton" id="208">
+						<description>Hide floor.png in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Hide floor.png in home</label>
+						<onclick>Skin.ToggleSetting(NoFloor)</onclick>
+						<selected>Skin.HasSetting(NoFloor)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>                                        
 					<control type="label" id="220">
 						<width>750</width>
