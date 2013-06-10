@@ -1,7 +1,18 @@
-﻿<window>
+<window>
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+		<control type="image">
+			<description>Fanart Image for Artist</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">$INFO[Player.Art(thumb)]</texture>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+			<visible>!IsEmpty(Player.Art(thumb)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
+			<fadetime>600</fadetime>
+		</control>
 		<control type="visualisation" id="2">
 			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
 			<description>visualisation</description>
@@ -10,17 +21,7 @@
 			<width>1280</width>
 			<height>720</height>
 		</control>
-		<control type="image">
-			<description>Fanart Image for Artist</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Player.Art(fanart)]</texture>
-			<colordiffuse>AAFFFFFF</colordiffuse>
-			<visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
-			<fadetime>600</fadetime>
-		</control>
+		
 		<!-- media infos -->
 		<control type="group">
 			<animation effect="fade" time="200">VisibleChange</animation>
