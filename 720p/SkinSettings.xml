@@ -937,6 +937,49 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
+					
+					<control type="radiobutton" id="305">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Custum playback background</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(Multibackgroundplayback)</onclick>
+						<onclick>Skin.SetBool(HideVisualizationFanart)</onclick>
+						<selected>Skin.HasSetting(Multibackgroundplayback)</selected>
+						
+					</control>
+					
+					<control type="button" id="306">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>Set path</label>
+						<onclick>Skin.SetPath(MultibackgroundplaybackDir)</onclick>
+						<visible>Skin.HasSetting(Multibackgroundplayback)</visible>
+					</control>
+					<control type="button" id="307">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>Fade time (default = 10000 = 10s)</label>
+						<onclick>Skin.SetNumeric(MultibackgroundplaybackFadeTime) </onclick>
+						<visible>Skin.HasSetting(Multibackgroundplayback)</visible>
+					</control>
+						
+						
+					
 					<control type="label" id="310">
 						<width>750</width>
 						<height>45</height>

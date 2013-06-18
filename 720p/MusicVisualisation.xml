@@ -10,8 +10,22 @@
 			<height>720</height>
 			<texture background="true">$INFO[Player.Art(thumb)]</texture>
 			<colordiffuse>AAFFFFFF</colordiffuse>
-			<visible>!IsEmpty(Player.Art(thumb)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
-			<fadetime>600</fadetime>
+			<visible>!IsEmpty(Player.Art(thumb)) + !Skin.HasSetting(HideVisualizationFanart) + !Skin.HasSetting(Multibackgroundplayback)</visible>
+			<fadetime>300</fadetime>
+		</control>		
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Skin.String(MultibackgroundplaybackDir)]</imagepath>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+			<timeperimage>30000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>Skin.HasSetting(Multibackgroundplayback) + !IsEmpty(Skin.String(MultibackgroundplaybackDir))</visible>
+			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="visualisation" id="2">
 			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
