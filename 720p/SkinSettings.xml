@@ -487,8 +487,21 @@
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
+					</control>				
 					<control type="radiobutton" id="209">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Show weather widget</label>
+						<onclick>Skin.ToggleSetting(HomepageHideWeatherWidget)</onclick>
+						<selected>!Skin.HasSetting(HomepageHideWeatherWidget)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="210">
 						<description>Hide favourites button in home</description>
 						<width>750</width>
 						<height>40</height>
@@ -501,7 +514,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control> 		
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="211">
 						<description>Hide floor.png in home</description>
 						<width>750</width>
 						<height>40</height>

@@ -777,4 +777,268 @@
 			</control>
 		</control>
 	</include>
+	<include name="HomeWeatherWidget">
+		<control type="group" id="9005">
+		<visible>!Window.IsVisible(Favourites)</visible>
+		<include>VisibleFadeEffect</include>
+		<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		
+		<control type="group">
+				<posx>60</posx>
+				<posy>50</posy>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>Container(9000).Hasfocus(7) + !Skin.HasSetting(HomepageHideWeatherWidget)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="list" id="8000">
+					<posx>0</posx>
+					<posy>50</posy>
+					<width>1200</width>
+					<height>250</height>
+					<onleft>8000</onleft>
+					<onright>8000</onright>
+					<onup>20</onup>
+					<ondown condition="System.HasAddon(script.globalsearch)">608</ondown>
+					<ondown condition="!System.HasAddon(script.globalsearch)">603</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="250" width="200">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>160</width>
+							<height>250</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						
+						<control type="label">
+							<posx>80</posx>
+							<posy>10</posy>
+							<width>200</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(OutLook)]</label>
+							<scroll>true</scroll>
+						</control>
+						
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>145</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="false">$INFO[ListItem.Icon]</texture>
+							<visible>Control.HasFocus(8001)</visible>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>20</posy>
+							<width>140</width>
+							<height>150</height>>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<visible>!Control.HasFocus(8001)</visible>
+						</control>
+						<control type="label">
+							<posx>80</posx>
+							<posy>168</posy>
+							<width>160</width>
+							<height>20</height>
+							<font>font16</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)][/B]</label>
+						</control>
+						<control type="label">
+							<posx>80</posx>
+							<posy>200</posy>
+							<width>200</width>
+							<height>20</height>
+							<font>font14</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<aligny>center</aligny>
+							<align>center</align>
+						</control>
+					</itemlayout>
+					
+					<focusedlayout height="250" width="200">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>160</width>
+							<height>250</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						
+						<control type="label">
+							<posx>80</posx>
+							<posy>10</posy>
+							<width>200</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Property(OutLook)]</label>
+							<scroll>true</scroll>
+						</control>
+						
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>145</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="false">$INFO[ListItem.Icon]</texture>
+							<visible>Control.HasFocus(8001)</visible>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>20</posy>
+							<width>140</width>
+							<height>150</height>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<visible>!Control.HasFocus(8001)</visible>
+						</control>
+						<control type="label">
+							<posx>80</posx>
+							<posy>168</posy>
+							<width>160</width>
+							<height>20</height>
+							<font>font16</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.Property(LowTemp)]$INFO[ListItem.Property(TempUnits)][/B] </label>
+						</control>
+						<control type="label">
+							<posx>80</posx>
+							<posy>200</posy>
+							<width>200</width>
+							<height>20</height>
+							<font>font14</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<aligny>center</aligny>
+							<align>center</align>
+						</control>
+						
+						
+					</focusedlayout>
+					<content>
+					<!--
+					Label1 -> Condition
+					Label2 -> Temp
+					Label 3 -> Day
+
+					
+					
+					NEW:
+					label -> day
+					<item>
+							<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+							<label2>$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label2>
+							<property name="day">Current</property>
+							<icon>-</icon>
+							<thumb>$INFO[Window(Weather).Property(Current.ConditionIcon)]</thumb>
+							<onclick>-</onclick>
+						</item>
+					-->
+						
+						<item>
+							<label>Current</label>
+							<icon>$INFO[Window(Weather).Property(Current.ConditionIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Current.Temperature)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Current.Temperature)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Current.Condition)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day0.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day1.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day1.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day1.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day2.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day2.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day2.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day2.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day3.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day3.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day3.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day3.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day4.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day4.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day4.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day4.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day5.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day5.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day5.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day5.Title))</visible>
+						</item>
+						<item>
+							<label>$INFO[Window(Weather).Property(Day6.Title)]</label>
+							<icon>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</icon>
+							<property name="HighTemp">$INFO[Window(Weather).Property(Day6.HighTemp)]</property>
+							<property name="LowTemp">$INFO[Window(Weather).Property(Day6.LowTemp)]</property>
+							<property name="Outlook">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
+							<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+							<onclick>noop</onclick>
+							<visible>Weather.IsFetched + !IsEmpty(Window(Weather).Property(Day6.Title))</visible>
+						</item>
+					</content>
+
+				</control>
+			</control>
+		</control>
+	</include>
 </includes>
