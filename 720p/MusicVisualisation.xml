@@ -19,7 +19,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<imagepath background="true">$INFO[Skin.String(MultibackgroundplaybackDir)]</imagepath>
-			<colordiffuse>AAFFFFFF</colordiffuse>
+			<!-- <colordiffuse>AAAAAFF0</colordiffuse> -->
 			<timeperimage>30000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>

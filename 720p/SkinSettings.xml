@@ -421,7 +421,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="2013">
+					<control type="radiobutton" id="204">
 						<description>disable auto slideout of submenus</description>
 						<width>750</width>
 						<height>40</height>
@@ -435,7 +435,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!IsEmpty(Skin.String(WeatherFanartDir))</enable>
 					</control>					
-					<control type="radiobutton" id="2070">
+					<control type="radiobutton" id="205">
 						<description>Enable system information</description>
 						<width>750</width>
 						<height>40</height>
@@ -448,7 +448,21 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="206">
+						<description>enable weather info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>20084</label>
+						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
+						<selected>Skin.HasSetting(homepageWeatherinfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Weather.Plugin)</visible>
+					</control>
+					<control type="radiobutton" id="207">
 						<description>Show Recently added Video info</description>
 						<width>750</width>
 						<height>40</height>
@@ -461,7 +475,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="208">
 						<description>Show Recently added info</description>
 						<width>750</width>
 						<height>40</height>
@@ -474,7 +488,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="209">
 						<description>Hide favourites button in home</description>
 						<width>750</width>
 						<height>40</height>
@@ -487,7 +501,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control> 		
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="210">
 						<description>Hide floor.png in home</description>
 						<width>750</width>
 						<height>40</height>
