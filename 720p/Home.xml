@@ -206,7 +206,7 @@
 		<!-- Music Info -->
 		<control type="group">
 			<posx>0</posx>
-			<posy>60</posy>
+			<posy>300</posy>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -408,7 +408,7 @@
 		<!-- Video Info -->
 		<control type="group">
 			<posx>0</posx>
-			<posy>50</posy>
+			<posy>290</posy>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
