@@ -168,13 +168,7 @@
 						<label2>31406</label2>
 						<onclick>ActivateWindow(SystemSettings)</onclick>
 						<icon>-</icon>
-					</item>
-					<item id="10">
-						<label>31414</label>
-						<label2>31413</label2>
-						<onclick>RunAddon(plugin.xbianconfig)</onclick>
-						<icon>-</icon>
-					</item>                                        
+					</item>                                     
 				</content>
 			</control>
 			<control type="image">

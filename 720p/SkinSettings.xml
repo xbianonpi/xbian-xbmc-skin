@@ -421,7 +421,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="2013">
+					<control type="radiobutton" id="204">
 						<description>disable auto slideout of submenus</description>
 						<width>750</width>
 						<height>40</height>
@@ -435,7 +435,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!IsEmpty(Skin.String(WeatherFanartDir))</enable>
 					</control>					
-					<control type="radiobutton" id="2070">
+					<control type="radiobutton" id="205">
 						<description>Enable system information</description>
 						<width>750</width>
 						<height>40</height>
@@ -448,7 +448,21 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="206">
+						<description>enable weather info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>20084</label>
+						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
+						<selected>Skin.HasSetting(homepageWeatherinfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Weather.Plugin)</visible>
+					</control>
+					<control type="radiobutton" id="207">
 						<description>Show Recently added Video info</description>
 						<width>750</width>
 						<height>40</height>
@@ -461,7 +475,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="208">
 						<description>Show Recently added info</description>
 						<width>750</width>
 						<height>40</height>
@@ -473,8 +487,21 @@
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>				
+					<control type="radiobutton" id="209">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Show weather widget</label>
+						<onclick>Skin.ToggleSetting(HomepageHideWeatherWidget)</onclick>
+						<selected>!Skin.HasSetting(HomepageHideWeatherWidget)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="210">
 						<description>Hide favourites button in home</description>
 						<width>750</width>
 						<height>40</height>
@@ -484,6 +511,19 @@
 						<label>31930</label>
 						<onclick>Skin.ToggleSetting(HideFavourites)</onclick>
 						<selected>Skin.HasSetting(HideFavourites)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control> 		
+					<control type="radiobutton" id="211">
+						<description>Hide floor.png in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Hide floor.png in home</label>
+						<onclick>Skin.ToggleSetting(NoFloor)</onclick>
+						<selected>Skin.HasSetting(NoFloor)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>                                        
@@ -924,6 +964,49 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
+					
+					<control type="radiobutton" id="305">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Custum playback background</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(Multibackgroundplayback)</onclick>
+						<onclick>Skin.SetBool(HideVisualizationFanart)</onclick>
+						<selected>Skin.HasSetting(Multibackgroundplayback)</selected>
+						
+					</control>
+					
+					<control type="button" id="306">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>Set path</label>
+						<onclick>Skin.SetPath(MultibackgroundplaybackDir)</onclick>
+						<visible>Skin.HasSetting(Multibackgroundplayback)</visible>
+					</control>
+					<control type="button" id="307">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>Fade time (default = 10000 = 10s)</label>
+						<onclick>Skin.SetNumeric(MultibackgroundplaybackFadeTime) </onclick>
+						<visible>Skin.HasSetting(Multibackgroundplayback)</visible>
+					</control>
+						
+						
+					
 					<control type="label" id="310">
 						<width>750</width>
 						<height>45</height>
