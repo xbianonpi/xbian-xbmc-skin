@@ -1105,7 +1105,7 @@
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
 						<icon>-</icon>
 						<thumb>-</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoTVShowButton) + Library.HasContent(TVShows)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible>
 					</item>
 					<item id="3">
 						<label>2</label>

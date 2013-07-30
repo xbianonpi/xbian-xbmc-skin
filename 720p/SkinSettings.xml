@@ -789,7 +789,7 @@
 						<focusedcolor>white</focusedcolor>
 						<label>          $LOCALIZE[31111] - $LOCALIZE[2] - $LOCALIZE[134]</label>
 						<onclick>Skin.ToggleSetting(HomeMenuNoMusicSongsButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoMusicSongButton)</selected>
+						<selected>Skin.HasSetting(HomeMenuNoMusicSongsButton)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
@@ -969,7 +969,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>Custum playback background</label>
+						<label>Custom playback background</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
