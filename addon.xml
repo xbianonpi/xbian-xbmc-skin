@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluenceonpi"
-  version="0.5.0"
+  version="0.5.1"
   name="Confluence for xbian"
   provider-name="xbianonpi (Credits to Jezz_X, Team XBMC)">
   <requires>
