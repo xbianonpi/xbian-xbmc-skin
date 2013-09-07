@@ -307,7 +307,7 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
-
+<!--custom buttons -->
 	<include name="HomeAddonItemsVideos">
 		<item>
 			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton1))]</label>
