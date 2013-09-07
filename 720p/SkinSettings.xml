@@ -449,7 +449,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="206">
-						<description>enable weather info</description>
+						<description>enable weather inf</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
