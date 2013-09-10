@@ -23,7 +23,7 @@
     <description lang="nl">Confluence voor xbian is gebaseerd op Jezz_X' Confluence. Aangepast voor xbian voor optimale snelheid. Extra instellingen zijn toegevoegd. Weer widgets, systeem info en meer!</description>
     <disclaimer lang="de">Das ist der Standard-Skin, nicht deinstallieren!</disclaimer>
     <disclaimer lang="en">This is you default skin, do not uninstall!</disclaimer>
-    <disclaimer lang="nl">Dit is de standaard skin, niet verwijderen!</disclaimer>
+    <disclaimer lang="nl">Dit is de standaard skin, niet verwijderen!!</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
